@@ -9,7 +9,7 @@
 	let moves = [];
 
 	$('h2.name').slice(0,2).each(function() {
-    	names.push($(this).text());
+    	names.push($(this).text().replace(/ /g, ''));
 	});
 
 	$('span.elo').slice(0, 2).each(function() {
