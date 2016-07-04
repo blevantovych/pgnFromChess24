@@ -1,8 +1,8 @@
-(() => {
+javascript:(() => {
 	const event = $('h2.title').text();
 	const round = $('h2.subTitle').text().replace('Round ', '');
 	const result = $('div.score').slice(0, 2).text().split('').reverse().join('')
-					.replace(/(.)(.)/g, (str, w, b) => { return w + '-' + b }).replace('½', '0.5');
+					.replace(/(.)(.)/g, (str, w, b) => { return w + '-' + b }).replace(/½/g, '1/2');
 
 	let names = [];
 	let elos  = [];
