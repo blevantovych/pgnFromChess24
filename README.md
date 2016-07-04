@@ -8,4 +8,5 @@
 ## alternatively you can also create bookmarklet (Chrome)
 * right click on bookmark panel 
 * then click Add Page button
-* then do this ![addBookmarklet](create_bookmark.png)
+* then do this 
+![addBookmarklet](create_bookmark.png)
