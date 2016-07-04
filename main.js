@@ -1,4 +1,4 @@
-javascript:(() => {
+(() => {
 	const event = $('h2.title').text();
 	const round = $('h2.subTitle').text().replace('Round ', '');
 	const result = $('div.score').slice(0, 2).text().split('').reverse().join('')
