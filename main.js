@@ -1,4 +1,6 @@
 (() => {
+
+
 	const event = $('h2.title').text();
 	const round = $('h2.subTitle').text().replace('Round ', '');
 	const result = $('div.score').slice(0, 2).text().split('').reverse().join('')
@@ -42,7 +44,6 @@
 
 	let pgn = `[Event "${event}"]\n[Round "${round}"]\n[Result "${result}"]\n[White "${names[1]}"]\n[Black "${names[0]}"]\n[WhiteElo "${elos[1]}"]\n[BlackElo "${elos[0]}"]\n\n${moves} ${result}`;
 
-
 	(() => {
 		let filename = names[1] + '-' + names[0] + '.pgn';
 		let blob = new Blob([pgn], {type: 'text/plain'}),
@@ -54,6 +55,16 @@
 	    a.dataset.downloadurl =  ['text/plain', a.download, a.href].join(':');
 	    e.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
 	    a.dispatchEvent(e);
+	})();
+	
+	// copy to clipboard
+	(() => {
+		const input = document.createElement('input');
+		document.body.appendChild(input);
+		input.value = pgn;
+		input.select();
+		document.execCommand('Copy');
+		document.body.removeChild(input);
 	})();
 
 })();
