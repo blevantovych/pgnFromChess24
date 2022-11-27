@@ -1,7 +1,6 @@
 # pgnFromChess24
 ## Steps to download pgn file from chess24.com
-* go to [site](chess24.com)
-* choose game you want to download
+* go to a chess game on chess24.com (e.g. [Ivanchuk, Vasyl - Van Foreest, Jorden](https://chess24.com/en/watch/live-tournaments/fide-world-team-championship-2022-pool-a/5/3/1)
 * open browser's console
 * paste code from main.js and press enter
 
