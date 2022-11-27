@@ -6,6 +6,6 @@
 
 ## alternatively you can also create bookmarklet (Chrome)
 * right click on bookmark panel 
-* then click Add Page button
-* then do this 
-![addBookmarklet](create_bookmark.png)
+* click Add Page button
+* name bookmarklet (e.g. downloadGameChess24)
+* paste code from [bookmarklet.js](bookmarklet.js) in the URL field
